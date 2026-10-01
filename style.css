@@ -309,3 +309,248 @@ header ul {
   height: 40px;
   background-color: #0077ff;
 }
+
+
+/* --- "SOBRE NÓS" (Todas as regras começam com .sobre)*/
+.sobre {
+  background-color: white;
+  color: black;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+}
+.sobre a {
+  color: inherit;
+}
+
+/* --- HEADER --- */
+.sobre header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding: 14px 28px;
+  border-bottom: 1px solid black;
+}
+.sobre .logo {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 800;
+  font-size: 15px;
+  line-height: 1;
+  color: #0a1f6b;
+}
+.sobre .logo span {
+  font-size: 28px;
+}
+.sobre nav {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+.sobre nav a {
+  font-size: 14px;
+  color: #0a6cff;
+}
+.sobre nav a.on {
+  font-weight: 700;
+}
+.sobre .btn {
+  border: 1px solid #666;
+  background-color: #f3f6fb;
+  padding: 6px 10px;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+/* --- CONTEÚDO --- */
+.sobre main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+.sobre section {
+  padding: 72px 0;
+}
+.sobre .eyebrow {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #666;
+  margin: 0 0 12px 0;
+}
+.sobre h1 {
+  font-size: clamp(40px, 7vw, 64px);
+  line-height: 1.1;
+  margin: 0 0 24px 0;
+  font-weight: 800;
+}
+.sobre h2 {
+  font-size: clamp(28px, 4vw, 38px);
+  line-height: 1.15;
+  margin: 0 0 16px 0;
+  font-weight: 800;
+}
+.sobre h3 {
+  font-size: 19px;
+  margin: 0 0 8px 0;
+}
+.sobre p {
+  color: #666;
+  margin: 0 0 16px 0;
+  max-width: 680px;
+}
+
+/* --- ABERTURA --- */
+.sobre .hero {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+.sobre .ph {
+  background-color: #0a6cff;
+  aspect-ratio: 5 / 4;
+  width: 100%;
+}
+.sobre .stats {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+.sobre .stat b {
+  display: block;
+  font-size: 34px;
+  line-height: 1.1;
+  color: black;
+}
+.sobre .stat small {
+  color: #666;
+  font-size: 13px;
+}
+.sobre .dot {
+  width: 40px;
+  height: 40px;
+  background-color: #0a6cff;
+  margin-bottom: 10px;
+}
+
+/* --- FAIXA CLARA (QUEM ATENDEMOS / FUNDADOR) --- */
+.sobre .band {
+  background-color: #f3f6fb;
+}
+.sobre .band .wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 72px 28px;
+}
+.sobre .awards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+.sobre .card {
+  flex: none;
+  background-color: transparent;
+  border-top: 3px solid #0a6cff;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 14px 0 0 0;
+}
+.sobre .card b {
+  color: black;
+  font-size: 18px;
+}
+.sobre .card p {
+  font-size: 15px;
+  margin: 6px 0 0 0;
+  min-height: 0;
+}
+
+/* --- VALORES --- */
+.sobre .values {
+  display: grid;
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0 0;
+  gap: 0;
+}
+.sobre .values li {
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+  padding: 18px 0;
+  border-top: 1px solid black;
+  font-size: 20px;
+  font-weight: 700;
+}
+.sobre .values li span {
+  color: #0a6cff;
+  font-size: 14px;
+}
+
+/* --- PROPOSTAS --- */
+.sobre .props {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 32px;
+  margin-top: 32px;
+}
+.sobre .props div {
+  border-left: 3px solid #ffc400;
+  padding-left: 16px;
+}
+.sobre .props p {
+  font-size: 15px;
+  margin: 0;
+}
+
+/* --- FUNDADOR --- */
+.sobre .founder {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 48px;
+  align-items: start;
+}
+.sobre .founder .ph {
+  aspect-ratio: 4 / 5;
+}
+.sobre .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 20px 0;
+}
+.sobre .tags span {
+  border: 1px solid black;
+  padding: 4px 12px;
+  font-size: 13px;
+  border-radius: 99px;
+}
+
+/* --- FOOTER --- */
+.sobre footer {
+  border-top: 1px solid black;
+  padding: 28px;
+  text-align: center;
+  color: #666;
+  font-size: 13px;
+}
+
+/* --- RESPONSIVO --- */
+@media (max-width: 780px) {
+  .sobre .hero, .sobre .founder {
+    grid-template-columns: 1fr;
+  }
+  .sobre header {
+    padding: 12px 18px;
+  }
+  .sobre nav {
+    gap: 16px;
+
+  }
+}
