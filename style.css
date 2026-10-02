@@ -554,3 +554,209 @@ header ul {
 
   }
 }
+
+/* --- Começo da pagina impacto --- */
+.impacto {
+  background-color: white;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+.impacto a {
+  color: inherit;
+}
+.impacto nav a {
+  font-size: 0.9rem;
+  color: #0a6cff;
+}
+.impacto nav a.ativo {
+  font-weight: bold;
+}
+
+.impacto main {
+  padding: 0;
+}
+.impacto .conteudo {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+.impacto .faixa {
+  background-color: #f3f6fb;
+}
+
+.impacto .eyebrow {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 12px;
+}
+.impacto h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+.impacto h2 {
+  font-size: 2rem;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+.impacto h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+.impacto p {
+  color: #666;
+  margin-bottom: 16px;
+  max-width: 680px;
+}
+
+.impacto .linha {
+  font-size: 0;
+  margin-top: 24px;
+}
+.impacto .abertura .linha {
+  margin-top: 0;
+}
+
+.impacto .abertura-texto {
+  display: inline-block;
+  vertical-align: middle;
+  width: 55%;
+  margin-right: 5%;
+}
+.impacto .abertura-texto p {
+  font-size: 1rem;
+}
+.impacto .abertura-texto .eyebrow {
+  font-size: 0.85rem;
+}
+.impacto .ph {
+  display: inline-block;
+  vertical-align: middle;
+  width: 40%;
+  height: 300px;
+  background-color: #0a6cff;
+}
+
+.impacto .numero,
+.impacto .bloco {
+  display: inline-block;
+  vertical-align: top;
+  width: 22%;
+  margin-right: 4%;
+}
+.impacto .numero:last-child,
+.impacto .bloco:last-child {
+  margin-right: 0;
+}
+.impacto .numero {
+  border-top: 3px solid #ffc400;
+  padding-top: 14px;
+}
+.impacto .numero strong {
+  display: block;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  color: black;
+}
+.impacto .numero span {
+  font-size: 0.9rem;
+  color: #666;
+}
+.impacto .bloco {
+  background-color: #f3f6fb;
+  border-top: 3px solid #0a6cff;
+  padding: 24px;
+}
+.impacto .bloco h3 {
+  font-size: 1.2rem;
+  color: black;
+  margin: 15px 0 8px 0;
+}
+.impacto .bloco p {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.impacto .programa {
+  display: inline-block;
+  vertical-align: top;
+  width: 48%;
+  margin-right: 4%;
+  border-left: 3px solid #ffc400;
+  padding-left: 16px;
+}
+.impacto .programa:last-child {
+  margin-right: 0;
+}
+.impacto .programa h3 {
+  font-size: 1.2rem;
+  color: black;
+}
+.impacto .programa p {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.impacto .passos {
+  display: block;
+  list-style: none;
+  margin-top: 24px;
+}
+.impacto .passos li {
+  padding: 18px 0;
+  border-top: 1px solid black;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.impacto .passos span {
+  display: inline-block;
+  width: 50px;
+  font-size: 0.9rem;
+  color: #0a6cff;
+}
+
+.impacto .final {
+  text-align: center;
+}
+.impacto .final p {
+  margin: 0 auto 24px auto;
+}
+.impacto .botao {
+  display: inline-block;
+  background-color: #0a6cff;
+  color: white;
+  padding: 12px 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.impacto footer {
+  border-top: 1px solid black;
+  padding: 28px;
+  text-align: center;
+}
+.impacto footer p {
+  max-width: 100%;
+  margin-bottom: 0;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .impacto h1 {
+    font-size: 2.2rem;
+  }
+  .impacto h2 {
+    font-size: 1.6rem;
+  }
+  .impacto .abertura-texto,
+  .impacto .ph,
+  .impacto .numero,
+  .impacto .bloco,
+  .impacto .programa {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+}
