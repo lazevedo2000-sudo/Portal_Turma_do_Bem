@@ -1,35 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Caveat:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Portal Turma do Bem</title>
 
 </head>
 
 <body>
     <header>
-        
-    
-    <img src="Img/logo.png" alt="Logo da Turma do Bem" class="logo">
+        <img src="Img/logo.png" alt="Logo da Turma do Bem" class="logo">
 
-    <ul>
-        <li><a>Home</a></li>
-        <li><a>Sobre nós</a></li> 
-        <li><a>Impacto</a></li>
-        <li><a>Como Ajudar</a></li>
-        <li><a>Historias</a></li>
-    </ul>
-    
-    <button>Entrar no Portal </button>
+        <nav class="menu-centro">
+            <ul>
+                <li><a href="./index.html" class="ativo">Home</a></li>
+                <li><a href="./QuemSomos.html">Quem Somos</a></li>
+                <li><a href="./Sobre.html">Sobre</a></li>
+                <li><a href="./FAQ.html">FAQ</a></li>
+                <li><a href="./Contato.html">Contato</a></li>
+            </ul>
 
-    <img src="Img/iconePerfil.png" alt="Icone de Perfil" class="icon">
-    
+        </nav>
+        <div class="botoes-direita">
+            <button>Entrar no Portal </button>
+            <img src="Img/iconePerfil.png" alt="Icone de Perfil" class="icon">
+        </div>
 
-    
-    
     </header>
-    
+    <main>
+
+        <section class="container1">
+
+            <div class="texto">
+                <h1>Tecnologia para conectar pessoas, recursos e sorrisos</h1>
+                <h3>Uma plataforma desenvolvida para aproximar doadores, voluntários e beneficiários,
+                    tornando mais simples acompanhar e potencializar o
+                    impacto social.</h3>
+            </div>
+
+            <img src="./Img/TDB.png" alt="Turma do Bem" class="tdb">
+        </section>
+
+        <section class="container2">
+            <article class="cards">
+                <img src="./Img/problema.pnj.avif" alt="Sobre o Projeto" class="apresentação">
+                <h3>Sobre o Projeto</h3>
+                <p>Identificamos desafios na captação de recursos e na comunicação
+                    com doadores. Nosso projeto busca usar a tecnologia para facilitar essa conexão.</p>
+            </article>
+
+            <article class="cards">
+                <img src="./Img/solução.png" alt="Nossa solução" class="apresentação">
+                <h3>Nossa solução</h3>
+                <p>Uma plataforma que conecta doadores, organizações e beneficiários. A proposta é centralizar
+                    informações,
+                    doações e acompanhamento em um só lugar.</p>
+            </article>
+
+            <article class="cards">
+                <img src="./Img/impacto.png" alt="Impacto esperado" class="apresentação">
+                <h3>Impacto esperado</h3>
+                <p>Queremos tornar as doações mais acessíveis e transparentes. Assim,
+                    buscamos ampliar o alcance das iniciativas e fortalecer seu impacto social.</p>
+            </article>
+
+        </section>
+
+
+        <footer>
+            <p>© 2026 Projeto Turma do Bem | FIAP</p>
+        </footer>
+
+    </main>
+
 </body>
+
 </html>
