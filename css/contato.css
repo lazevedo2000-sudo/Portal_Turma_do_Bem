@@ -1,0 +1,61 @@
+:root {
+--verde-turma: #C9C916;
+--laranja: #E8820C;
+--fundo: #FFFDF4;
+--card: #FBEBC8;
+--texto: #222222;
+--texto-secundario: #666666;
+--borda-card: #F5C518;
+}
+
+.formularioDiv {
+    width: 50%;
+    height: 70vh;
+    margin: 0 auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  border: 1px solid var(--borda-card);
+  border-radius: 8px;
+  background-color: var(--fundo);
+}
+
+form {
+    display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+}
+
+#botoes {
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+}
+
+.buttonSubmit {
+  width: 125px;
+  height: 52px;
+  border-radius: 8px;
+  background-color: white;
+  font-family: inherit;
+  font-size: 16px;
+  color: var(--verde-turma);
+  font-weight: 700;
+  cursor: pointer;
+  border: 2px solid var(--verde-turma);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+.buttonReset {
+  width: 125px;
+  height: 52px;
+  border-radius: 8px;
+  background-color: white;
+  font-family: inherit;
+  font-size: 16px;
+  color: red;
+  font-weight: 700;
+  cursor: pointer;
+  border: 2px solid red;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+

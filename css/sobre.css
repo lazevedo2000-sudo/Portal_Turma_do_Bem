@@ -1,0 +1,71 @@
+:root {
+--verde-turma: #C9C916;
+--laranja: #E8820C;
+--fundo: #FFFDF4;
+--card: #FBEBC8;
+--texto: #222222;
+--texto-secundario: #666666;
+--borda-card: #F5C518;
+}
+
+main {
+    margin: 3%;
+}
+
+article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6vw;
+}
+h2{
+    font-size: 50px;
+    color: var(--verde-turma);
+    text-align: center;
+    margin:5%
+}
+.techCard{
+    width: 20vw;
+    height: 43vh;
+    padding: 15px;
+    background-color: var(--card);
+    border: 3px solid var(--borda-card);
+    border-radius: 8px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.techCard img {
+    margin-top: 3vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8vw;
+    height: 15vh;
+    justify-content: center;
+}
+
+.techCard h3 {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.techCard p {
+    margin-top: 15px;
+    font-size: 1em;
+}
+
+.roadmap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.roadmap img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid var(--borda-card);
+    border-radius: 5%;
+}
+
+
