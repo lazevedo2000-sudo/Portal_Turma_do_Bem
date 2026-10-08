@@ -1,3 +1,9 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 :root {
 --verde-turma: #C9C916;
 --laranja: #E8820C;
@@ -20,10 +26,72 @@ article{
 }
 h2{
     font-size: 50px;
-    color: var(--verde-turma);
+    color: #C9C916;
     text-align: center;
     margin:5%
 }
+
+/* topo */
+
+.sobre-topo {
+    display: block;
+    max-width: 900px;
+    margin: 2% auto;
+    text-align: center;
+    font-family: 'Nunito', Arial, sans-serif;
+}
+
+.sobre-topo h1 {
+    font-size: 50px;
+    color:#E8820C;
+    margin-bottom: 10px;
+}
+
+.sobre-topo p {
+    font-size: 18px;
+    color:#222222;
+}
+
+/* Blocos (contexto) */
+.sobre-bloco {
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Nunito', Arial, sans-serif;
+    color:#222222;
+}
+
+.sobre-bloco p {
+    line-height: 1.6;
+    color:#666666;
+}
+
+.sobre-topo h1 {
+    font-size: 60px;
+}
+
+/* Cards do contexto */
+.contexto-card {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin: 0;
+    padding: 20px;
+    background:#FBEBC8;
+    border-top: 5px solid #F5C518;
+    border-radius: 8px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.contexto-card h3 {
+    font-size: 1.2rem;
+    color:#222222;
+    margin-bottom: 15px;
+}
+
+/* Tecnologias */
 .techCard{
     width: 20vw;
     height: 43vh;
@@ -68,4 +136,64 @@ h2{
     border-radius: 5%;
 }
 
-
+/* Telas para desktop >= 992px */
+@media (min-width: 992px) {
+  .sobre-topo {
+    max-width: 56.25rem;           /* 900px */
+    margin: 2.5rem auto 1.25rem auto;
+  }
+ 
+  .sobre-topo h1 {
+    font-size: 3.125rem;           /* 50px, mesmo tamanho do h2 do colega */
+  }
+ 
+  .sobre-topo p {
+    font-size: 1.2rem;
+  }
+ 
+  .sobre-bloco {
+    max-width: 68.75rem;           /* 1100px */
+    padding: 0 1.25rem;
+  }
+ 
+  .contexto-card,
+  .diferencial {
+    display: inline-block;         /* ficam lado a lado */
+    vertical-align: top;           /* alinhados pelo topo */
+    width: 30%;
+    margin: 0 1% 1.5rem 1%;
+    padding: 1.375rem;
+  }
+ 
+  .solucao-texto {
+    max-width: 53.125rem;          /* 850px: linha confortável de ler */
+  }
+}
+ 
+/* Telas grandes >= 1300px */
+@media (min-width: 1300px) {
+  .sobre-topo {
+    max-width: 62.5rem;            /* 1000px */
+    margin: 3.75rem auto 1.875rem auto;
+  }
+ 
+  .sobre-topo p {
+    font-size: 1.3rem;
+  }
+ 
+  .sobre-bloco {
+    max-width: 77.5rem;            /* 1240px: não estica até as bordas */
+    margin: 0 auto 3.75rem auto;
+    padding: 0 2.5rem;
+  }
+ 
+  .contexto-card,
+  .diferencial {
+    padding: 1.875rem;
+  }
+ 
+  .solucao-texto {
+    max-width: 59.375rem;          /* 950px */
+    font-size: 1.1rem;
+  }
+}
