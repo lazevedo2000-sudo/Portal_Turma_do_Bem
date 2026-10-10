@@ -8,8 +8,7 @@
 
 1. [Sobre o Projeto](#-sobre-o-projeto)
 2. [Problema Abordado e Solução](#-problema-abordado-e-solução)
-3. [Tecnologias Utilizadas](#-tecnologias-utilizadas)
-4. [Link do Repositório](#-link-do-repositório)
+3. [Link do Repositório](#-link-do-repositório)
 
 
 ---
