@@ -1,84 +1,210 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/sobre.css" />
+    <title>Portal Turma do Bem</title>
+    <link rel="icon" type="image/x-icon" href="img/icon.ico" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/sobre.css">
-  <title>Portal Turma do Bem</title>
-  <link rel="icon" type="image/x-icon" href="img/icon.ico">
+  <body>
+    <header>
+      <img src="./Img/logo.png" alt="Logo da Turma do Bem" class="logo" />
 
-</head>
+      <nav class="menu-centro">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./quemSomos.html">Quem Somos</a></li>
+          <li><a href="./sobre.html" class="ativo">Sobre</a></li>
+          <li><a href="./faq.html">FAQ</a></li>
+          <li><a href="./contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="botoes-direita">
+        <button>Entrar no Portal</button>
+        <img src="./Img/iconePerfil.png" alt="Icone de Perfil" class="icon" />
+      </div>
+    </header>
 
-<body>
-  <header>
-    <img src="./Img/logo.png" alt="Logo da Turma do Bem" class="logo">
-
-    <nav class="menu-centro">
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./quemSomos.html">Quem Somos</a></li>
-        <li><a href="./sobre.html" class="ativo">Sobre</a></li>
-        <li><a href="./faq.html">FAQ</a></li>
-        <li><a href="./contato.html">Contato</a></li>
-      </ul>
-
-    </nav>
-    <div class="botoes-direita">
-      <button>Entrar no Portal </button>
-      <img src="./Img/iconePerfil.png" alt="Icone de Perfil" class="icon">
-    </div>
-
-  </header>
-
-
-  <main>
-    <h2>TECNOLOGIAS</h2>
-    <article>
-      <section class="techCard">
-        <h3>HTML</h3>
-        <img src="./Img/html.png" alt="HTML">
-        <p>HTML é a linguagem de marcação padrão para criar páginas da web.</p>
+    <main>
+      <section class="sobre-topo">
+        <h1>Sobre o Projeto</h1>
+        <p>
+          Entenda o contexto que deu origem ao nosso projeto e a solução que
+          estamos desenvolvendo para fortalecer a captação de recursos da Turma
+          do Bem.
+        </p>
       </section>
 
-      <section class="techCard">
-        <h3>CSS</h3>
-        <img src="./Img/css.png" alt="CSS">
-        <p>CSS é a linguagem de estilização utilizada para documentos HTML.</p>
+      <article class="sobre-bloco">
+        <h2>CONTEXTO</h2>
+
+        <section class="contexto-card">
+          <h3>Quem é a Turma do Bem</h3>
+          <p>
+            A Turma do Bem é uma organização social fundada em 2002 pelo
+            cirurgião-dentista Fábio Bibancos. A ONG mantém uma rede de
+            dentistas voluntários que oferecem tratamento odontológico gratuito
+            a crianças e adolescentes em situação de vulnerabilidade social, no
+            Brasil e em outros países. Mais do que tratar dentes, esse trabalho
+            devolve o sorriso, a autoestima e novas oportunidades de futuro.
+          </p>
+        </section>
+
+        <section class="contexto-card">
+          <h3>O desafio</h3>
+          <p>
+            Para manter e ampliar seus atendimentos, a Turma do Bem precisa de
+            recursos de forma constante. Hoje, grande parte da captação depende
+            de doações tradicionais, que costumam ser pontuais e irregulares.
+            Além disso, registrar e acompanhar as contribuições envolve muitos
+            processos manuais, o que dificulta saber de onde veio cada recurso,
+            quanto cada campanha arrecadou e qual impacto social foi gerado.
+          </p>
+        </section>
+
+        <section class="contexto-card">
+          <h3>Nosso papel</h3>
+          <p>
+            Somos um grupo de estudantes da FIAP que se propôs a apoiar a Turma
+            do Bem nesse desafio. A partir do levantamento das necessidades da
+            organização, buscamos uma solução que torne a captação de recursos
+            mais contínua, organizada e transparente para a ONG, seus parceiros
+            e seus doadores.
+          </p>
+        </section>
+      </article>
+
+      <article class="sobre-bloco" id="solucao">
+        <h2>NOSSA SOLUÇÃO</h2>
+
+        <div class="solucao-texto">
+          <p>
+            Nossa solução tem como objetivo ajudar a Turma do Bem a captar mais
+            recursos de maneira simples, escalável, automatizada e rastreável.
+            Em vez de depender exclusivamente de doações tradicionais, a
+            proposta é criar novas formas de transformar atividades e transações
+            que já fazem parte do cotidiano de pessoas e empresas em
+            oportunidades de contribuição para a causa.
+          </p>
+
+          <p>
+            A solução permitirá que diferentes mecanismos de captação sejam
+            conectados à Turma do Bem, registrando de onde os recursos vieram,
+            quanto foi gerado, quando ocorreu e para qual campanha ou finalidade
+            a contribuição foi direcionada. Dessa forma, a organização poderá
+            acompanhar todo o caminho do recurso, desde sua origem até o impacto
+            social gerado.
+          </p>
+        </div>
+
+        <h3 class="subtitulo">Nossos diferenciais</h3>
+
+        <section class="diferencial">
+          <h3>Automação</h3>
+          <p>
+            Um dos principais diferenciais é a automação da captação. A ideia é
+            reduzir a necessidade de processos manuais para registrar, organizar
+            e acompanhar as contribuições, tornando a geração de recursos mais
+            prática tanto para a Turma do Bem quanto para seus parceiros e
+            participantes.
+          </p>
+        </section>
+
+        <section class="diferencial">
+          <h3>Rastreabilidade</h3>
+          <p>
+            A solução não deve apenas registrar que uma contribuição aconteceu,
+            mas permitir compreender sua origem e acompanhar os resultados
+            gerados por ela. Isso proporciona maior controle para a organização
+            e mais transparência sobre a utilização dos recursos.
+          </p>
+        </section>
+
+        <section class="diferencial">
+          <h3>Escalabilidade</h3>
+          <p>
+            A proposta também busca ser escalável, permitindo que novos
+            parceiros, mecanismos de captação e campanhas sejam incorporados à
+            solução conforme a Turma do Bem evolui. Assim, o projeto não fica
+            limitado a uma única forma de arrecadação, podendo acompanhar novas
+            oportunidades identificadas ao longo do tempo.
+          </p>
+        </section>
+
+        <div class="solucao-texto">
+          <p>
+            Com isso, a solução busca transformar a captação de recursos em um
+            processo mais contínuo e integrado à rotina das pessoas e empresas.
+            O objetivo final é ampliar as possibilidades de geração de recursos
+            para a Turma do Bem, reduzir esforços operacionais e facilitar a
+            visualização do impacto social gerado.
+          </p>
+
+          <p class="destaque">
+            A solução será desenvolvida de forma incremental, permitindo que
+            suas funcionalidades sejam avaliadas e aprimoradas ao longo das
+            próximas sprints, de acordo com as necessidades identificadas
+            durante o desenvolvimento.
+          </p>
+        </div>
+      </article>
+
+      <h2>TECNOLOGIAS</h2>
+      <article>
+        <section class="techCard">
+          <h3>HTML</h3>
+          <img src="./Img/html.png" alt="HTML" />
+          <p>
+            HTML é a linguagem de marcação padrão para criar páginas da web.
+          </p>
+        </section>
+
+        <section class="techCard">
+          <h3>CSS</h3>
+          <img src="./Img/css.png" alt="CSS" />
+          <p>
+            CSS é a linguagem de estilização utilizada para documentos HTML.
+          </p>
+        </section>
+
+        <section class="techCard">
+          <h3>Java</h3>
+          <img src="Img/java.png" alt="Java" />
+          <p>
+            Java é uma linguagem de programação, orientada a objetos e
+            amplamente utilizada para desenvolvimento de aplicações.
+          </p>
+        </section>
+
+        <section class="techCard">
+          <h3>Python</h3>
+          <img src="./Img/python.png" alt="Python" />
+          <p>
+            Python é uma linguagem de programação, amplamente utilizada em
+            diversas áreas, como desenvolvimento web, ciência de dados e
+            automação.
+          </p>
+        </section>
+        <section class="techCard">
+          <h3>SQL</h3>
+          <img src="./Img/sql.png" alt="SQL" />
+          <p>
+            SQL (Structured Query Language) é uma linguagem de programação
+            utilizada para gerenciar e manipular bancos de dados relacionais.
+          </p>
+        </section>
+      </article>
+      <h2>ROADMAP</h2>
+      <section class="roadmap">
+        <img src="./Img/roadmap.png" alt="Roadmap" />
       </section>
+    </main>
 
-      <section class="techCard">
-        <h3>Java</h3>
-        <img src="Img/java.png" alt="Java">
-        <p>Java é uma linguagem de programação, orientada a objetos e amplamente utilizada para
-          desenvolvimento de aplicações.</p>
-      </section>
-
-      <section class="techCard">
-        <h3>Python</h3>
-        <img src="./Img/python.png" alt="Python">
-        <p>Python é uma linguagem de programação, amplamente utilizada em diversas áreas,
-          como desenvolvimento web, ciência de dados e automação.</p>
-      </section>
-      <section class="techCard">
-        <h3>SQL</h3>
-        <img src="./Img/sql.png" alt="SQL">
-        <p>SQL (Structured Query Language) é uma linguagem de programação utilizada para gerenciar e manipular bancos de
-          dados relacionais.</p>
-      </section>
-    </article>
-    <h2>ROADMAP</h2>
-    <section class="roadmap">
-      <img src="./Img/roadmap.png" alt="Roadmap">
-    </section>
-  </main>
-
-
-  <footer>
-    <p>© 2026 Projeto Turma do Bem | FIAP</p>
-  </footer>
-
-</body>
-
+    <footer>
+      <p>© 2026 Projeto Turma do Bem | FIAP</p>
+    </footer>
+  </body>
 </html>
