@@ -1,0 +1,125 @@
+:root {
+--verde-turma: #C9C916;
+--laranja: #E8820C;
+--fundo: #FFFDF4;
+--card: #FBEBC8;
+--texto: #222222;
+--texto-secundario: #666666;
+--borda-card: #F5C518;
+}
+
+body {
+    font-family: "Nunito", "Segoe UI", Arial, sans-serif;
+    color: var(--texto);
+    background-color: var(--fundo);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.perguntas-frequentes{
+    background: linear-gradient(90deg, #C76D0F 0%, #6b3f14 35%, #2a2118 100%);
+    padding: 56px 88px;
+}
+
+.perguntas-frequentes h1{
+    color: #fff;
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.faq {
+    margin-top: 40px;
+    margin-block-end: 40px;
+    padding: 0px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.faq ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+.faq li{
+    margin-bottom: 15px;
+}
+
+.faq li label{
+    padding: 15px 10px;
+    font-size: 25px;
+    background-color: #FBEBC8;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq li label span{
+    display: inline-block;
+    padding: 10px;
+    background-color: #C9C916;
+    color: #fff;
+    border-radius: 8px;
+    margin-right: 12px;
+}
+
+.faq li label::before{
+    content: '+';
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.faq input[type=radio]{
+    display: none;
+}
+
+.faq .resposta {
+    color: #C76D0F;
+    padding: 0px 10px;
+    background-color: #FBEBC8;
+    line-height: 32px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s, padding .5s;
+    text-align: left;
+}
+
+.faq input[type=radio]:checked + label + .resposta {
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+.faq input[type=radio]:checked + label + .resposta{
+    max-height: 400px;
+    padding: 10px 300px 20px;
+}
+
+.faq input[type=radio]:checked + label span{
+    background-color: #E8820C;
+}
+
+.faq input[type=radio]:checked + label::before{
+    content: '-';
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    text-align: center;
+    width: 100%;
+}
