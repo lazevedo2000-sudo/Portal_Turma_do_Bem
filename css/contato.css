@@ -1,29 +1,66 @@
 :root {
 --verde-turma: #C9C916;
+--verde-turma-escuro: #8b8b0e;
 --laranja: #E8820C;
 --fundo: #FFFDF4;
 --card: #FBEBC8;
+--azul: #0D6EFD;
+--azul-escuro: #0b4daf;
 --texto: #222222;
 --texto-secundario: #666666;
 --borda-card: #F5C518;
 }
 
+
+h1{
+  margin-top: 3vh;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: var(--laranja);
+  font-weight: 800;
+}
+
 .formularioDiv {
-    width: 50%;
-    height: 70vh;
+    width: 30%;
+    height: 50vh;
     margin: 0 auto;
-    margin-top: 10vh;
+    margin-top: 3vh;
     margin-bottom: 10vh;
-  border: 1px solid var(--borda-card);
+  border: 2px solid var(--borda-card);
   border-radius: 8px;
   background-color: var(--fundo);
 }
 
 form {
-    display: flex;
+  display: flex;
   flex-direction: column;
   gap: 12px;
   padding: 20px;
+}
+
+form input {
+  height: 3vh;
+  border: 1px solid var(--borda-card);
+  border-radius: 8px;
+  background-color: white;
+}
+
+form input:focus{
+  border: 1px solid var(--laranja);
+}
+
+form select {
+    height: 3vh;
+  border: 1px solid var(--borda-card);
+  border-radius: 8px;
+  background-color: white;
+}
+
+form textarea {
+  height: 10vh;
+  border: 1px solid var(--borda-card);
+  border-radius: 8px;
+  background-color: white;
 }
 
 #botoes {
@@ -37,26 +74,23 @@ form {
   height: 52px;
   border-radius: 8px;
   background-color: white;
-  font-family: inherit;
   font-size: 16px;
-  color: var(--verde-turma);
-  font-weight: 700;
-  cursor: pointer;
-  border: 2px solid var(--verde-turma);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  color: var(--azul);
+  border: 2px solid var(--azul);
+}
+
+.buttonSubmit:hover{
+    border: 2px solid var(--azul-escuro);
+    color: var(--azul-escuro);
 }
 .buttonReset {
   width: 125px;
   height: 52px;
   border-radius: 8px;
   background-color: white;
-  font-family: inherit;
   font-size: 16px;
-  color: red;
-  font-weight: 700;
-  cursor: pointer;
-  border: 2px solid red;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  color: crimson;
+  border: 2px solid crimson;
 }
 
 /* Telas desktop >= 992px */
@@ -75,3 +109,7 @@ form {
   }
 }
 
+.buttonReset:hover{
+  border-color: rgb(141, 11, 37);
+  color: rgb(141, 11, 37);
+}
