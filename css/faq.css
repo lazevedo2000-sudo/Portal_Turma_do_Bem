@@ -123,3 +123,49 @@ footer p {
     text-align: center;
     width: 100%;
 }
+
+/* Desktop: a partir de 992px */
+@media (min-width: 992px) {
+    .perguntas-frequentes {
+        padding: 56px 88px;
+    }
+ 
+    .perguntas-frequentes h1 {
+        font-size: 52px;
+    }
+ 
+    .faq {
+        padding: 0 120px;
+    }
+ 
+    .faq li label {
+        font-size: 25px;
+    }
+}
+ 
+/* Telas grandes: a partir de 1300px */
+@media (min-width: 1300px) {
+    .perguntas-frequentes {
+        padding: 72px 120px;
+    }
+ 
+    .perguntas-frequentes h1 {
+        font-size: 60px;
+    }
+ 
+    .faq {
+        width: 100%;
+        max-width: 1100px;
+        margin-inline: auto;   
+        padding: 0;
+        box-sizing: border-box;
+    }
+ 
+    .faq li label {
+        font-size: 28px;
+    }
+ 
+    .faq .resposta {
+        font-size: 1.1em;
+    }
+}

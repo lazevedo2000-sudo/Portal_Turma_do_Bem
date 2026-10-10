@@ -244,3 +244,27 @@ footer p{
   margin: 0;
   font-size: 0.95rem;
 }
+
+/* Tela desktop */
+@media (min-width: 992px) {
+  .quem-somos h1 {
+    font-size: 2.75rem;           
+  }
+ 
+  .integrantes {
+    max-width: 68.75rem;          
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+ 
+/* Telas grandes >= 1300px */
+@media (min-width: 1300px) {
+  .quem-somos h1 {
+    font-size: 3.125rem;          
+  }
+ 
+  .integrantes {
+    max-width: 77.5rem;           
+  }
+}

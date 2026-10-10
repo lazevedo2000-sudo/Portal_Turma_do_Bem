@@ -224,6 +224,46 @@ footer p {
   font-size: 0.95rem;
 }
 
+/* Tela desktop */
+@media (min-width: 992px) {
+
+  .container1 {
+    max-width: 68.75rem;          
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
+  .texto h1 {
+    font-size: 2.5rem;            
+  }
+ 
+  .texto h3 {
+    font-size: 1.2rem;
+  }
+ 
+  /* Área dos 3 cartões */
+  .container2 {
+    max-width: 68.75rem;          
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+ 
+/* Telas grandes >= 1300px */
+@media (min-width: 1300px) {
+  .container1,
+  .container2 {
+    max-width: 77.5rem;           
+  }
+ 
+  .texto h1 {
+    font-size: 3rem;              
+  }
+ 
+  .texto h3 {
+    font-size: 1.35rem;
+  }
+}
 
 
 

@@ -59,3 +59,19 @@ form {
   box-shadow: 0 2px 4px rgba(0,0,0,0.15);
 }
 
+/* Telas desktop >= 992px */
+@media (min-width: 992px) {
+  .formularioDiv {
+    max-width: 37.5rem;           
+    margin: 2.5rem auto;
+  }
+}
+
+/* Telas grandes >= 1300px */
+@media (min-width: 1300px) {
+  .formularioDiv {
+    max-width: 43.75rem;          
+    margin: 3.75rem auto;
+  }
+}
+
