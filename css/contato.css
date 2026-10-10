@@ -5,6 +5,7 @@
 --fundo: #FFFDF4;
 --card: #FBEBC8;
 --azul: #0D6EFD;
+--azul-escuro: #0b4daf;
 --texto: #222222;
 --texto-secundario: #666666;
 --borda-card: #F5C518;
@@ -79,8 +80,8 @@ form textarea {
 }
 
 .buttonSubmit:hover{
-    border: 2px solid var(--verde-turma-escuro);
-    color: var(--verde-turma-escuro);
+    border: 2px solid var(--azul-escuro);
+    color: var(--azul-escuro);
 }
 .buttonReset {
   width: 125px;
@@ -93,5 +94,6 @@ form textarea {
 }
 
 .buttonReset:hover{
-  border-color: red;
+  border-color: rgb(141, 11, 37);
+  color: rgb(141, 11, 37);
 }
