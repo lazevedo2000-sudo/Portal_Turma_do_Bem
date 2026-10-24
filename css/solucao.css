@@ -1,0 +1,346 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  --verde-turma: #C9C916;
+  --laranja: #E8820C;
+  --fundo: #FFFDF4;
+  --card: #FBEBC8;
+  --texto: #222222;
+  --texto-secundario: #666666;
+  --borda-card: #F5C518;
+}
+ 
+/* Topo */
+ 
+.solucao-topo {
+  background: linear-gradient(90deg, #C76D0F 0%, #6b3f14 35%, #2a2118 100%);
+  padding: 56px 88px;
+}
+ 
+.solucao-topo h1 {
+  color: #fff;
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+ 
+.solucao-topo p {
+  max-width: 900px;
+  margin-top: 12px;
+  font-size: 20px;
+  color: #FBEBC8;
+}
+ 
+/* Links entre as duas páginas da solução */
+ 
+.etapas-nav {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding-top: 24px;
+}
+ 
+.etapas-nav a {
+  padding: 10px 22px;
+  border: 2px solid #F5C518;
+  border-radius: 30px;
+  background-color: #fff;
+  font-weight: 700;
+}
+ 
+.etapas-nav a:hover {
+  border-color: #E8820C;
+}
+ 
+.etapas-nav .ativo {
+  background-color: #E8820C;
+  border-color: #E8820C;
+  color: #fff;
+}
+ 
+.aviso {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 15px;
+  color: #666666;
+}
+ 
+/*  Blocos e títulos */
+ 
+.bloco {
+  padding: 56px;
+}
+ 
+.bloco-branco {
+  background-color: #fff;
+}
+ 
+.titulo-secao {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+}
+ 
+/* risquinho  */
+.titulo-secao::after {
+  content: "";
+  display: block;
+  width: 66px;
+  height: 5px;
+  margin: 12px auto 32px;
+  border-radius: 3px;
+  background-color: #E8820C;
+}
+ 
+.intro {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+  font-size: 19px;
+  line-height: 1.6;
+  color: #666666;
+}
+ 
+/*  Cards (como-funciona.html) */
+ 
+.grade-3 {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+ 
+.card-solucao {
+  flex: 1;
+  padding: 28px 24px;
+  text-align: center;
+  background-color: #FBEBC8;
+  border-top: 5px solid #F5C518;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+ 
+/* ícone */
+.icone {
+  font-size: 40px;
+}
+ 
+.card-solucao h3 {
+  margin: 14px 0 10px;
+  font-size: 22px;
+  font-weight: 800;
+}
+ 
+.card-solucao p {
+  line-height: 1.55;
+  color: #4a4a4a;
+}
+ 
+/*  Passo a passo */
+ 
+.passos {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+ 
+.passo {
+  flex: 1;
+  padding: 24px 18px;
+  text-align: center;
+  background-color: #FFFDF4;
+  border: 2px solid #F5C518;
+  border-radius: 12px;
+}
+ 
+.passo-numero {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: #E8820C;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+}
+ 
+.passo h3 {
+  margin: 14px 0 8px;
+  font-size: 18px;
+  font-weight: 800;
+}
+ 
+.passo p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #4a4a4a;
+}
+ 
+/* Faixa final */
+
+.faixa-final {
+  padding: 56px 24px;
+  text-align: center;
+  background: linear-gradient(90deg, #C76D0F 0%, #6b3f14 35%, #2a2118 100%);
+  color: #fff;
+}
+
+.faixa-final h2 {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.faixa-final p {
+  margin: 10px 0 28px;
+  font-size: 19px;
+  color: #FBEBC8;
+}
+
+.botao-faixa {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 8px;
+  background-color: #C9C916;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.botao-faixa:hover {
+  background-color: #fff;
+}
+
+/* valor em destaque dentro de cada passo (simulacao.html) */
+.passo .valor-destaque {
+  margin-bottom: 8px;
+  font-size: 26px;
+  font-weight: 800;
+  color: #E8820C;
+}
+ 
+/* caixa do painel do doador */
+.painel {
+  padding: 32px;
+  background-color: #FFFDF4;
+  border: 2px solid #F5C518;
+  border-radius: 14px;
+}
+ 
+.painel-ola {
+  margin-bottom: 24px;
+  font-size: 26px;
+  font-weight: 800;
+}
+ 
+.painel-subtitulo {
+  margin: 32px 0 14px;
+  font-size: 20px;
+  font-weight: 800;
+}
+ 
+/* lista das últimas contribuições */
+.contribuicoes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+ 
+.contribuicoes li {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 18px;
+  background-color: #fff;
+  border-left: 5px solid #E8820C;
+  border-radius: 8px;
+}
+ 
+.contribuicoes strong {
+  color: #E8820C;
+}
+
+/* Media queries */
+@media (min-width: 992px) {
+  header ul {
+    gap: 24px;
+  }
+ 
+  header ul a {
+    white-space: nowrap;
+  }
+ 
+  .solucao-topo h1 {
+    font-size: 2.75rem;
+  }
+ 
+  .solucao-topo p {
+    font-size: 1.2rem;
+  }
+ 
+  /* conteúdo com largura máxima e centralizado */
+  .grade-3,
+  .passos,
+  .painel {
+    max-width: 68.75rem;          /* 1100px */
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
+  .titulo-secao {
+    font-size: 2.25rem;
+  }
+ 
+  .passo h3 {
+    font-size: 1.05rem;
+  }
+}
+ 
+/* Telas grandes >= 1300px */
+@media (min-width: 1300px) {
+  header ul {
+    gap: 44px;
+  }
+ 
+  .solucao-topo {
+    padding: 72px 120px;
+  }
+ 
+  .solucao-topo h1 {
+    font-size: 3.125rem;
+  }
+ 
+  .bloco {
+    padding: 72px 56px;
+  }
+ 
+  .grade-3,
+  .passos,
+  .painel {
+    max-width: 77.5rem;           /* 1240px */
+  }
+ 
+  .grade-3 {
+    gap: 40px;
+  }
+ 
+  .titulo-secao {
+    font-size: 2.5rem;
+  }
+ 
+  .intro {
+    max-width: 56.25rem;
+    font-size: 1.25rem;
+  }
+ 
+  .passo {
+    padding: 28px 22px;
+  }
+ 
+  .passo p {
+    font-size: 1rem;
+  }
+}
