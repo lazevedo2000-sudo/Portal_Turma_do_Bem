@@ -224,48 +224,243 @@ footer p {
   font-size: 0.95rem;
 }
 
-/* Tela desktop */
-@media (min-width: 992px) {
+/* =====================================================
+   RESPONSIVIDADE - colar NO FINAL do style.css
+   Desktop: mantém a estrutura que já existe
+   Tablet: 768px (vale de 768px até 991px)
+   Mobile: telas pequenas (até 767px)
+   ===================================================== */
 
+/* ===== Botão do menu hambúrguer (escondido no desktop) ===== */
+.btn-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 8px;
+}
+
+.btn-menu span {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background-color: var(--texto);
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Vira um "X" quando o menu está aberto */
+.btn-menu.aberto span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.btn-menu.aberto span:nth-child(2) {
+  opacity: 0;
+}
+
+.btn-menu.aberto span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Foco visível para quem navega pelo teclado */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid var(--laranja);
+  outline-offset: 2px;
+}
+
+/* ===== TABLET (até 991px) ===== */
+@media (max-width: 991px) {
+
+  header {
+    position: relative;
+    padding: 12px 24px;
+  }
+
+  .botoes-direita {
+    gap: 14px;
+  }
+
+  .btn-menu {
+    display: flex;
+  }
+
+  /* O menu vira uma lista que abre embaixo do header */
+  .menu-centro {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 8px 24px 16px;
+    background-color: var(--verde-turma);
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.15);
+  }
+
+  .menu-centro.aberto {
+    display: flex;
+  }
+
+  header ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+  }
+
+  .menu-centro a {
+    display: block;
+    padding: 12px 4px;
+  }
+
+  .menu-centro .ativo {
+    border-bottom: none;
+    border-left: 4px solid var(--laranja);
+    padding-left: 12px;
+  }
+
+  /* Hero: texto em cima, imagem embaixo */
   .container1 {
-    max-width: 68.75rem;          
-    margin-left: auto;
-    margin-right: auto;
+    flex-direction: column;
+    gap: 24px;
   }
- 
+
+  .texto {
+    max-width: 100%;
+    padding: 40px 32px 0;
+  }
+
   .texto h1 {
-    font-size: 2.5rem;            
+    font-size: 2.25rem;
   }
- 
+
   .texto h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
- 
-  /* Área dos 3 cartões */
+
+  .tdb {
+    width: 80%;
+    height: auto;
+    max-height: 300px;
+    object-position: center;
+    margin-bottom: 24px;
+  }
+
+  /* Cards em 2 colunas */
   .container2 {
-    max-width: 68.75rem;          
-    margin-left: auto;
-    margin-right: auto;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 32px 32px 48px;
   }
-}
- 
-/* Telas grandes >= 1300px */
-@media (min-width: 1300px) {
-  .container1,
-  .container2 {
-    max-width: 77.5rem;           
-  }
- 
-  .texto h1 {
-    font-size: 3rem;              
-  }
- 
-  .texto h3 {
-    font-size: 1.35rem;
+
+  .cards {
+    flex: 1 1 calc(50% - 12px);
+    max-width: 400px;
   }
 }
 
+/* ===== MOBILE (até 767px) ===== */
+@media (max-width: 767px) {
 
+  header {
+    padding: 10px 16px;
+  }
+
+  .logo {
+    width: 96px;
+  }
+
+  .botoes-direita {
+    gap: 8px;
+  }
+
+  .botoes-direita button:not(.btn-menu) {
+    width: auto;
+    height: 42px;
+    padding: 0 12px;
+    font-size: 14px;
+  }
+
+  .icon {
+    width: 36px;
+  }
+
+  .menu-centro {
+    padding: 8px 16px 16px;
+  }
+
+  .texto {
+    padding: 32px 20px 0;
+    gap: 14px;
+    text-align: center;
+  }
+
+  .texto h1 {
+    font-size: 1.75rem;
+  }
+
+  .texto h3 {
+    font-size: 1rem;
+  }
+
+  .tdb {
+    width: 90%;
+    max-height: 220px;
+  }
+
+  /* Cards em 1 coluna */
+  .container2 {
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 16px 40px;
+  }
+
+  .cards {
+    flex: none;
+    width: 100%;
+    max-width: 480px;
+  }
+
+  .apresentação {
+    height: 180px;
+  }
+
+  .container2 h3 {
+    font-size: 22px;
+  }
+
+  .container2 p {
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 16px;
+  }
+}
+
+/* Celulares bem pequenos: esconde o ícone de perfil para nada ficar cortado */
+@media (max-width: 400px) {
+  .icon {
+    display: none;
+  }
+}
+
+/* Respeita quem prefere menos animação */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
 
 
 
