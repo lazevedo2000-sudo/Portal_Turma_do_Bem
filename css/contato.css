@@ -1,108 +1,183 @@
 :root {
---verde-turma: #C9C916;
---verde-turma-escuro: #8b8b0e;
---laranja: #E8820C;
---fundo: #FFFDF4;
---card: #FBEBC8;
---azul: #0D6EFD;
---azul-escuro: #0b4daf;
---texto: #222222;
---texto-secundario: #666666;
---borda-card: #F5C518;
+  --verde-turma: #C9C916;
+  --verde-turma-escuro: #8b8b0e;
+  --laranja: #E8820C;
+  --fundo: #FFFDF4;
+  --card: #FBEBC8;
+  --azul: #0D6EFD;
+  --azul-escuro: #0b4daf;
+  --texto: #222222;
+  --texto-secundario: #666666;
+  --borda-card: #F5C518;
 }
 
 body {
-    font-family: "Nunito", "Segoe UI", Arial, sans-serif;
-    color: var(--texto);
-    background-color: var(--fundo);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-.envie-sua-mensagem {
-    background: linear-gradient(90deg, #C76D0F 0%, #6b3f14 35%, #2a2118 100%);
-    padding: 56px 88px;
-}
-
-.envie-sua-mensagem h1{
-    color: #fff;
-    font-size: 52px;
-    font-weight: 700;
-    line-height: 1.1;
-}
-
-.formularioDiv {
-    width: 30%;
-    height: 60vh;
-    margin: 0 auto;
-    margin-top: 3vh;
-    margin-bottom: 10vh;
-  border: 2px solid var(--borda-card);
-  border-radius: 8px;
+  font-family: "Nunito", "Segoe UI", Arial, sans-serif;
+  color: var(--texto);
   background-color: var(--fundo);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Banner de Topo */
+.envie-sua-mensagem {
+  background: linear-gradient(90deg, #C76D0F 0%, #6b3f14 35%, #2a2118 100%);
+  padding: 56px 88px;
+}
+
+.envie-sua-mensagem h1 {
+  color: #fff;
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+/* Container do Formulário Responsivo */
+.formularioDiv {
+  width: 100%;
+  max-width: 520px;
+  margin: 40px auto 60px auto;
+  border: 2px solid var(--borda-card);
+  border-radius: 14px;
+  background-color: var(--fundo);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 }
 
 form {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding: 20px;
+  padding: 28px;
 }
 
-form input {
-  height: 3vh;
-  border: 1px solid var(--borda-card);
-  border-radius: 8px;
-  background-color: white;
+form label {
+  font-weight: 600;
+  color: var(--texto);
+  font-size: 15px;
 }
 
-form input:focus{
-  border: 1px solid var(--laranja);
-}
-
+form input,
 form select {
-    height: 3vh;
+  height: 42px;
+  padding: 0 12px;
   border: 1px solid var(--borda-card);
   border-radius: 8px;
-  background-color: white;
+  background-color: #ffffff;
+  font-family: inherit;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s;
 }
 
 form textarea {
-  height: 10vh;
+  min-height: 110px;
+  padding: 10px 12px;
   border: 1px solid var(--borda-card);
   border-radius: 8px;
-  background-color: white;
+  background-color: #ffffff;
+  font-family: inherit;
+  font-size: 15px;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: var(--laranja);
 }
 
 #botoes {
   display: flex;
   justify-content: center;
-  gap: 2vw;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.buttonSubmit,
+.buttonReset {
+  width: 125px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .buttonSubmit {
-  width: 125px;
-  height: 52px;
-  border-radius: 8px;
-  background-color: white;
-  font-size: 16px;
   color: var(--azul);
   border: 2px solid var(--azul);
 }
 
-.buttonSubmit:hover{
-    border: 2px solid var(--azul-escuro);
-    color: var(--azul-escuro);
+.buttonSubmit:hover {
+  background-color: var(--azul);
+  color: #ffffff;
 }
+
 .buttonReset {
-  width: 125px;
-  height: 52px;
-  border-radius: 8px;
-  background-color: white;
-  font-size: 16px;
   color: crimson;
   border: 2px solid crimson;
 }
 
+.buttonReset:hover {
+  background-color: crimson;
+  color: #ffffff;
+}
 
+/* ==========================================
+   MEDIA QUERIES (Breakpoints do Quem Somos)
+   ========================================== */
+
+/* Tablet (<= 991px) */
+@media (max-width: 991px) {
+  .envie-sua-mensagem {
+    padding: 40px 32px;
+  }
+
+  .envie-sua-mensagem h1 {
+    font-size: 40px;
+  }
+
+  .formularioDiv {
+    width: 85%;
+    margin: 32px auto 48px auto;
+  }
+}
+
+/* Mobile (<= 767px) */
+@media (max-width: 767px) {
+  .envie-sua-mensagem {
+    padding: 32px 20px;
+  }
+
+  .envie-sua-mensagem h1 {
+    font-size: 30px;
+  }
+
+  .formularioDiv {
+    width: calc(100% - 32px);
+    margin: 24px 16px 32px 16px;
+  }
+
+  form {
+    padding: 20px 16px;
+  }
+}
+
+/* Dispositivos Pequenos (<= 400px) */
+@media (max-width: 400px) {
+  #botoes {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .buttonSubmit,
+  .buttonReset {
+    width: 100%;
+  }
+}

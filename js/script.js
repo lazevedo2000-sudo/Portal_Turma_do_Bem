@@ -35,3 +35,17 @@ if (menu && areaBotoes) {
     if (e.matches) abrirMenu(false);
   });
 }
+
+function cpfOuCnpj() {
+  const tipoPessoa = document.querySelector('#tipoPessoa').value;
+  const campoCpf = document.querySelector('#campo-cpf');
+  const campoCnpj = document.querySelector('#campo-cnpj');
+
+  if (tipoPessoa === 'pj') {
+    campoCpf.classList.add('oculta');
+    campoCnpj.classList.remove('oculta');
+  } else {
+    campoCpf.classList.remove('oculta');
+    campoCnpj.classList.add('oculta');
+  }
+}

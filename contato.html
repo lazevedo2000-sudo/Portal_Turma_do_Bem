@@ -7,9 +7,12 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/contato.css">
   <link rel="icon" type="image/x-icon" href="img/icon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-  <title>Portal Turma do Bem</title>
-
+  <title>Portal Turma do Bem - Contato</title>
 </head>
 
 <body>
@@ -24,26 +27,26 @@
         <li><a href="./faq.html">FAQ</a></li>
         <li><a href="./contato.html" class="ativo">Contato</a></li>
       </ul>
-
     </nav>
+
     <div class="botoes-direita">
-      <button>Entrar no Portal </button>
+      <a href="login.html"><button>Entrar no Portal</button></a>
       <img src="./Img/iconePerfil.png" alt="Icone de Perfil" class="icon">
     </div>
-
   </header>
 
   <main>
     <section class="envie-sua-mensagem">
       <h1>Envie sua mensagem!</h1>
     </section>
+
     <article class="formularioDiv">
       <form>
         <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
+        <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com">
 
         <label for="motivo">Motivo:</label>
         <select id="motivo" name="motivo" required>
@@ -53,8 +56,10 @@
           <option value="elogio">Elogio</option>
           <option value="reclamacao">Reclamação</option>
         </select>
+
         <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+        <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Escreva sua mensagem aqui..."></textarea>
+
         <div id="botoes">
           <button type="submit" class="buttonSubmit">Enviar</button>
           <button type="reset" class="buttonReset">Limpar</button>
@@ -63,12 +68,11 @@
     </article>
   </main>
 
-
   <footer>
     <p>© 2026 Projeto Turma do Bem | FIAP</p>
   </footer>
 
-
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

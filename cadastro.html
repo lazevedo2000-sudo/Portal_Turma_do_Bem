@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/cadastro.css">
+  <link rel="icon" type="image/x-icon" href="img/icon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <title>Portal Turma do Bem - Cadastro</title>
+</head>
+
+<body>
+  <header>
+    <img src="./Img/logo.png" alt="Logo da Turma do Bem" class="logo">
+
+    <nav class="menu-centro">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./quemSomos.html">Quem Somos</a></li>
+        <li><a href="./sobre.html">Sobre</a></li>
+        <li><a href="./faq.html">FAQ</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="botoes-direita">
+      <img src="./Img/iconePerfil.png" alt="Icone de Perfil" class="icon">
+    </div>
+  </header>
+
+  <main>
+
+    <article class="formularioDiv">
+      <form>
+        <label for="user">Usuário:</label>
+        <input type="text" id="user" name="user" required placeholder="Digite seu nome de usuário">
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com">
+
+        <label for="tel">Telefone:</label>
+        <input type="tel" id="tel" name="tel" placeholder="(11) 99999-9999">
+
+        <label for="data">Data de Nascimento:</label>
+        <input type="date" id="data" name="data">
+
+        <label for="tipoPessoa">PF ou PJ:</label>
+        <select name="tipoPessoa" id="tipoPessoa" onchange="cpfOuCnpj()">
+          <option value="pf">Pessoa Física</option>
+          <option value="pj">Pessoa Jurídica</option>
+        </select>
+
+        <div id="campo-cpf" class="campo-dinamico">
+          <label for="cpf">CPF:</label>
+          <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
+        </div>
+
+        <div id="campo-cnpj" class="campo-dinamico oculta">
+          <label for="cnpj">CNPJ:</label>
+          <input type="text" id="cnpj" name="cnpj" placeholder="00.000.000/0001-00">
+        </div>
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required placeholder="Sua senha">
+
+        <label for="password2">Digite sua senha novamente:</label>
+        <input type="password" id="password2" name="password2" required placeholder="Repita a senha">
+
+        <div id="checkbox">
+          <input type="checkbox" id="termos" required>
+          <label for="termos">Você aceita os termos e condições?</label>
+        </div>
+
+        <p class="login-link">Já possui uma conta? <a href="login.html">Faça Login</a></p>
+
+        <div id="botoes">
+          <button class="buttonSubmit" type="submit">Enviar</button>
+          <button class="buttonReset" type="reset">Limpar</button>
+        </div>
+      </form>
+    </article>
+  </main>
+
+  <footer>
+    <p>© 2026 Projeto Turma do Bem | FIAP</p>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

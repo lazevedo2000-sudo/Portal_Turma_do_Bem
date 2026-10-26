@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/login.css">
+  <link rel="icon" type="image/x-icon" href="img/icon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <title>Portal Turma do Bem - Login</title>
+</head>
+
+<body>
+  <header>
+    <img src="./Img/logo.png" alt="Logo da Turma do Bem" class="logo">
+
+    <nav class="menu-centro">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./quemSomos.html">Quem Somos</a></li>
+        <li><a href="./sobre.html">Sobre</a></li>
+        <li><a href="./faq.html">FAQ</a></li>
+        <li><a href="./contato.html">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="botoes-direita">
+      <img src="./Img/iconePerfil.png" alt="Icone de Perfil" class="icon">
+    </div>
+  </header>
+
+  <main>
+    <article class="formularioDiv">
+      <div id="imgIcone">
+        <img src="img/iconePerfil.svg" alt="Ícone de Perfil">
+      </div>
+      <form>
+        <label for="userEmail">Usuário ou E-mail:</label>
+        <input type="text" id="userEmail" name="userEmail" required placeholder="Digite seu usuário ou e-mail">
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required placeholder="Digite sua senha">
+
+        <p class="cadastro-link">Não possui uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+
+        <div id="botoes">
+          <button class="buttonSubmit" type="submit">Entrar</button>
+          <button class="buttonReset" type="reset">Limpar</button>
+        </div>
+      </form>
+    </article>
+  </main>
+
+  <footer>
+    <p>© 2026 Projeto Turma do Bem | FIAP</p>
+  </footer>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
