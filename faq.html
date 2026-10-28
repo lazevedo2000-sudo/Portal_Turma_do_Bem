@@ -26,6 +26,7 @@
         <li><a href="./index.html">Home</a></li>
         <li><a href="./quemSomos.html">Quem Somos</a></li>
         <li><a href="./sobre.html">Sobre</a></li>
+        <li><a href="./simulacao.html">Solução</a></li>
         <li><a href="./faq.html" class="ativo">FAQ</a></li>
         <li><a href="./contato.html">Contato</a></li>
       </ul>
@@ -35,78 +36,27 @@
       <button>Entrar no Portal </button>
       <img src="./Img/iconePerfil.png" alt="Icone de Perfil" class="icon">
     </div>
-
   </header>
 
-
-  <main>
-
+    <main>
     <section class="perguntas-frequentes">
       <h1>Perguntas Frequentes (FAQ)</h1>
     </section>
 
-    <section>
-      <div>
-        <ul class="faq">
-          <li>
-            <input type="radio" name="acordeon" id="primeiro">
-            <label for="primeiro"><span>1</span>Quem vocês querem ajudar?</label>
-            <div class="resposta">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              </p>
-            </div>
-          </li>
-          <li>
-            <input type="radio" name="acordeon" id="segundo">
-            <label for="segundo"><span>2</span>Como funciona o projeto?</label>
-            <div class="resposta">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              </p>
-            </div>
-          </li>
-          <li>
-            <input type="radio" name="acordeon" id="terceiro">
-            <label for="terceiro"><span>3</span>Quais problemas o grupo vai resolver?</label>
-            <div class="resposta">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              </p>
-            </div>
-          </li>
-          <li>
-            <input type="radio" name="acordeon" id="quarto">
-            <label for="quarto"><span>4</span>Como pretendem resolver problemas de Automatização?</label>
-            <div class="resposta">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              </p>
-            </div>
-          </li>
-          <li>
-            <input type="radio" name="acordeon" id="quinto">
-            <label for="quinto"><span>5</span>Como pretendem resolver problemas de Capitação?</label>
-            <div class="resposta">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              </p>
-            </div>
-          </li>
-          <li>
-            <input type="radio" name="acordeon" id="sexto">
-            <label for="sexto"><span>6</span>Ainda tenho duvidas sobre o projeto</label>
-            <div class="resposta">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              </p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
+    <div class="busca">
+      <input type="search" id="busca" placeholder="Buscar pergunta..." aria-label="Buscar pergunta">
+    </div>
 
+    <!-- js/faq.js -->
+    <ul class="faq" id="faq"></ul>
+
+    <p class="vazio" id="vazio">Nenhuma pergunta encontrada. Envie a sua em <a href="./contato.html">CONTATO</a>.</p>
+  </main>
 
   <footer>
     <p>© 2026 Projeto Turma do Bem | FIAP</p>
   </footer>
-
-</main>
-
+  <script src="./js/script.js"></script>
+  <script src="./js/faq.js"></script>
 </body>
-
 </html>

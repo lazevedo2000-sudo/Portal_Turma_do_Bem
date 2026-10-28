@@ -17,7 +17,6 @@ body {
     flex-direction: column;
 }
 
-
 main{
     flex: 1;
     display: flex;
@@ -37,21 +36,44 @@ main{
     line-height: 1.1;
 }
 
+/* --- BUSCA --- */
+.busca {
+  width: 100%;
+  max-width: 1100px;
+  margin: 40px auto 0;
+  padding: 0 24px;
+}
+
+.busca input {
+  width: 100%;
+  padding: 14px 16px;
+  font: inherit;
+  font-size: 18px;
+  color: var(--texto);
+  background-color: var(--fundo);
+  border: 3px solid var(--borda-card);
+  border-radius: 8px;
+}
+
+.vazio {
+  display: none;
+  text-align: center;
+  color: var(--texto-secundario);
+  padding: 24px;
+}
+
 .faq {
+    list-style: none;
     margin-top: 40px;
     margin-block-end: 40px;
     padding: 0px 200px;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
 }
 
-.faq ul {
-    list-style: none;
-    padding: 0;
-    width: 100%;
-}
 .faq li{
+    border: 3px solid var(--borda-card);
+    border-radius: 8px;
     margin-bottom: 15px;
 }
 
@@ -66,7 +88,6 @@ main{
 }
 
 .faq li label span{
-    display: inline-block;
     padding: 10px;
     background-color: #C9C916;
     color: #fff;
@@ -80,8 +101,8 @@ main{
     font-size: 24px;
 }
 
-.faq input[type=radio]{
-    display: none;
+.faq input[type=checkbox] {
+  display: none;
 }
 
 .faq .resposta {
@@ -95,33 +116,21 @@ main{
     text-align: left;
 }
 
-.faq input[type=radio]:checked + label + .resposta {
-    max-height: 400px;
-    padding: 10px 10px 20px;
+.faq input[type=checkbox]:checked + label + .resposta {
+  max-height: 1600px;
+  padding: 10px 10px 20px;
 }
 
-.faq input[type=radio]:checked + label + .resposta{
-    max-height: 400px;
-    padding: 10px 300px 20px;
+.faq input[type=checkbox]:checked + label span {
+  background-color: var(--laranja);
 }
 
-.faq input[type=radio]:checked + label span{
-    background-color: #E8820C;
-}
-
-.faq input[type=radio]:checked + label::before{
-    content: '-';
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.faq input[type=checkbox]:checked + label::before {
+  content: '-';
 }
 
 footer p {
     text-align: center;
-    width: 100%;
 }
 
 /* Desktop: a partir de 992px */
