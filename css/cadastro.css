@@ -135,6 +135,10 @@ form select:focus {
   margin-top: 12px;
 }
 
+.termos a{
+  font-weight: 700;
+  color: var(--laranja);
+}
 .buttonSubmit,
 .buttonReset {
   width: 125px;

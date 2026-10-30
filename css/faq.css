@@ -21,17 +21,16 @@ main{
     flex: 1;
     display: flex;
     flex-direction: column;
-
 }
 
 .perguntas-frequentes{
     background: linear-gradient(90deg, #C76D0F 0%, #6b3f14 35%, #2a2118 100%);
-    padding: 56px 88px;
+    padding: 36px 20px;
 }
 
 .perguntas-frequentes h1{
     color: #fff;
-    font-size: 52px;
+    font-size: 32px;
     font-weight: 800;
     line-height: 1.1;
 }
@@ -40,15 +39,15 @@ main{
 .busca {
   width: 100%;
   max-width: 1100px;
-  margin: 40px auto 0;
-  padding: 0 24px;
+  margin: 30px auto 0;
+  padding: 0 16px;
 }
 
 .busca input {
   width: 100%;
   padding: 14px 16px;
   font: inherit;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--texto);
   background-color: var(--fundo);
   border: 3px solid var(--borda-card);
@@ -64,9 +63,9 @@ main{
 
 .faq {
     list-style: none;
-    margin-top: 40px;
-    margin-block-end: 40px;
-    padding: 0px 200px;
+    margin-top: 30px;
+    margin-block-end: 30px;
+    padding: 0 16px;
     display: flex;
     flex-direction: column;
 }
@@ -79,26 +78,26 @@ main{
 
 .faq li label{
     padding: 15px 10px;
-    font-size: 25px;
+    font-size: 18px;
     background-color: #FBEBC8;
-
     display: flex;
     align-items: center;
     cursor: pointer;
 }
 
 .faq li label span{
-    padding: 10px;
+    padding: 8px 10px;
     background-color: #C9C916;
     color: #fff;
     border-radius: 8px;
     margin-right: 12px;
+    font-size: 14px;
 }
 
 .faq li label::before{
     content: '+';
     margin-right: 10px;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .faq input[type=checkbox] {
@@ -109,7 +108,8 @@ main{
     color: #C76D0F;
     padding: 0px 10px;
     background-color: #FBEBC8;
-    line-height: 32px;
+    line-height: 28px;
+    font-size: 15px;
     max-height: 0;
     overflow: hidden;
     transition: max-height .5s, padding .5s;
@@ -131,6 +131,25 @@ main{
 
 footer p {
     text-align: center;
+}
+
+/* Tablet: a partir de 768px */
+@media (min-width: 768px) {
+    .perguntas-frequentes {
+        padding: 48px 40px;
+    }
+
+    .perguntas-frequentes h1 {
+        font-size: 40px;
+    }
+
+    .faq {
+        padding: 0 40px;
+    }
+
+    .faq li label {
+        font-size: 22px;
+    }
 }
 
 /* Desktop: a partir de 992px */
